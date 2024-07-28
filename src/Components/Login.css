@@ -149,11 +149,11 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 
 
 .upperdesign{
-    position: fixed;
+    position: absolute;
     top: 0rem;
 }
 .lowerdesign{
-    position: fixed;
+    position: absolute;
     bottom: 0rem;
 }
 
