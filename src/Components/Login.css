@@ -1,0 +1,195 @@
+.login-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden  ;
+  background-color: #08111C;
+  color: white;
+}
+
+.avatar {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.avatar img {
+  width: 100%;
+  height: auto;
+}
+
+.section {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  position: relative;
+  
+  
+}
+
+/* Adjusted Info Section */
+.info-section {
+    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 8px;
+  width: 55%;
+  font-family: inter;
+  /* text-align: center; */
+  /* position: absolute; */
+  background: rgba(255, 255, 255, 0.1);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  
+}
+.info, .email-verification{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    gap: 0.5rem;
+    font-family: inter;
+}
+.info h2{
+    font-family: lalezar;
+}
+.input::placeholder{
+    color: white;
+}
+.input
+{
+    width: 100%;
+    padding: 0.5rem;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 7px;
+    color: white;
+}
+.continue-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 98%;
+  background: linear-gradient(90deg, #66c4d9, #ffc107);
+  border: none;
+  color: white;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+  padding: 0.75rem 0;
+  font-weight: 700;
+  border-radius: 5px;
+  font-size: 12px;
+}
+.styling{
+    gap: 8px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    width: 100%;
+}
+.line{
+  width: 100%;
+}
+.login-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  width: 100%;
+  padding: 10px;
+  gap: 0.5rem;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  border-radius: 7px;
+
+}
+.edit-email{
+    display: flex;
+    position: relative  ;
+
+}
+.edit-email span{
+    color: #00FFFF;
+}
+.edit{
+    position: absolute;
+    right: -5rem;
+    cursor: pointer;
+}
+
+/* OTP Input */
+.otp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 0.45rem;
+  border-radius: 7px;
+  background-color: transparent;
+}
+
+.otp input {
+  width: 14.25%;
+
+  text-align: center;
+  font-size: 1.5rem;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+
+.upperdesign{
+    position: fixed;
+    top: 0rem;
+}
+.lowerdesign{
+    position: fixed;
+    bottom: 0rem;
+}
+
+@media (max-width:600px) {
+    .image-section{
+        display: none;
+    }
+    .section{
+        width: 100%;
+    }
+    .info-section{
+        width: 80%;
+    }
+    .info h2{
+font-size: 1.25rem;
+    }
+    .edit{
+        right: -3.5rem;
+        top: 0.25rem;
+    }
+    .info p{
+        font-size: 0.75rem;
+        text-align: center;
+    }
+    .email-verification p{
+        font-size: 0.8rem;
+    }
+    .otp{
+        gap:0.25rem
+    }
+    .upperdesign{
+        right:5rem;
+        top: 3rem;
+    }
+    .lowerdesign{
+        bottom: 3rem;
+        right: 10rem;
+    }
+}
