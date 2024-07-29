@@ -50,16 +50,21 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   
 }
 .info, .email-verification{
+  width: 95%;
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     padding: 2rem 0;
     gap: 0.5rem;
     font-family: inter;
 }
+.info p{
+  text-align: center;
+}
 .info h2{
     font-family: lalezar;
+    text-align: center;
 }
 .input::placeholder{
     color: white;
@@ -93,7 +98,7 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content:center ;
     align-items: center;
-    width: 100%;
+    width: 90%;
 }
 .line{
   width: 100%;
@@ -114,7 +119,10 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 .edit-email{
     display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative  ;
+    width: 100%;
 
 }
 .edit-email span{
@@ -122,7 +130,7 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 .edit{
     position: absolute;
-    right: -5rem;
+    right: 0;
     cursor: pointer;
 }
 
@@ -132,14 +140,13 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   justify-content: center;
   align-items: center;
   width: 100%;
-  gap: 0.45rem;
+  gap: 0.25rem;
   border-radius: 7px;
   background-color: transparent;
 }
 
 .otp input {
   width: 14.25%;
-
   text-align: center;
   font-size: 1.5rem;
   background: transparent;
@@ -157,7 +164,7 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     bottom: 0rem;
 }
 
-@media (max-width:600px) {
+@media (max-width:670px) {
     .image-section{
         display: none;
     }
@@ -170,10 +177,7 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     .info h2{
 font-size: 1.25rem;
     }
-    .edit{
-        right: -3.5rem;
-        top: 0.25rem;
-    }
+  
     .info p{
         font-size: 0.75rem;
         text-align: center;
@@ -185,11 +189,30 @@ font-size: 1.25rem;
         gap:0.25rem
     }
     .upperdesign{
-        right:5rem;
-        top: 3rem;
+      width: 80%;
+      
     }
     .lowerdesign{
-        bottom: 3rem;
-        right: 10rem;
+       width: 80%;
     }
+}
+
+@media (min-width:671px) and (max-width:900px) {
+  
+  .upperdesign{
+    width: 100%;
+  }
+  .lowerdesign{
+width: 100%;
+  }
+  .info{
+    width: 80%;
+  }
+  .info-section{
+    width: 80%;
+  }
+  .otp{
+    gap: 0.25rem;
+  }
+  
 }
